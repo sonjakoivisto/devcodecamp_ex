@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign in form</title>
+</head>
+<body>
+    <h1>Register</h1>
+<form method=post>
+<label for=firstName>First Name:
+        <input type=text placeholder=John required>
+</label>
+<label for=lastName>Last Name:
+        <input type=text placeholder=Smith required>
+</label><br>
+
+<label for=male>Male</label>
+<input type=radio name=gender value=male id=male>
+<label for=female>Female</label>
+<input type=radio name=gender value=female id=female>
+<label for=other>Other</label>
+<input type=radio name=gender value=other id=other><br>
+
+<label for=email>Email:</label>
+<input id="email" type=email placeholder="your email" required>
+<label for=password>Password:</label>
+<input type=password id=password pattern=".{5,10}" required title="password must be from 5 to 10 characters">
+<br>
+<div>
+<label for=bd>Birthday:</label>
+<select name=day>
+<option>01</option>
+<option>02</option>
+<option>26</option>
+</select>
+<select name=month>
+        <option>Jan</option>
+        <option>May</option>
+        <option>Aug</option>
+</select>
+<select name=year>
+        <option>1993</option>
+        <option>1994</option>
+        <option>1996</option>
+</select>
+</div>
+<label for=agreed>I agree to the terms and coditions</label>
+<input type="checkbox" name=agreed><br>
+<input type="Submit">
+
+</form>
+
+
+</body>
+</html>
